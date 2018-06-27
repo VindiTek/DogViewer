@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76BF252920E39211007E49C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF252820E39211007E49C8 /* AppDelegate.swift */; };
+		76BF252E20E39211007E49C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BF252C20E39211007E49C8 /* Main.storyboard */; };
+		76BF253020E39212007E49C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BF252F20E39212007E49C8 /* Assets.xcassets */; };
+		76BF253320E39212007E49C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BF253120E39212007E49C8 /* LaunchScreen.storyboard */; };
+		76BF253C20E39483007E49C8 /* NetworkingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF253B20E39483007E49C8 /* NetworkingWorker.swift */; };
+		76BF253F20E397B3007E49C8 /* AllBreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF253E20E397B3007E49C8 /* AllBreedsList.swift */; };
+		76BF254120E397CD007E49C8 /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF254020E397CD007E49C8 /* DogBreed.swift */; };
+		76BF254620E3AB57007E49C8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF254520E3AB57007E49C8 /* UIViewController+Extension.swift */; };
+		76BF254A20E3AB98007E49C8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF254820E3AB98007E49C8 /* UITableViewCell+Extension.swift */; };
+		76BF254B20E3AB98007E49C8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF254920E3AB98007E49C8 /* UITableView+Extension.swift */; };
+		76BF254F20E3ABC0007E49C8 /* ControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF254E20E3ABC0007E49C8 /* ControllerHelper.swift */; };
+		76BF255620E3AC3A007E49C8 /* AllDogsBreedListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF255220E3AC3A007E49C8 /* AllDogsBreedListPresenter.swift */; };
+		76BF255720E3AC3A007E49C8 /* AllDogsBreedListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF255320E3AC3A007E49C8 /* AllDogsBreedListRouter.swift */; };
+		76BF255820E3AC3A007E49C8 /* AllDogsBreedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF255420E3AC3A007E49C8 /* AllDogsBreedListVC.swift */; };
+		76BF255920E3AC3A007E49C8 /* AllDogsBreedListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF255520E3AC3A007E49C8 /* AllDogsBreedListConfigurator.swift */; };
+		76BF256320E3AD88007E49C8 /* DogBreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF256220E3AD88007E49C8 /* DogBreedCell.swift */; };
+		76BF256520E3AD94007E49C8 /* DogBreedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BF256420E3AD94007E49C8 /* DogBreedCell.xib */; };
+		76BF256820E3AE4B007E49C8 /* AllDogsBreedListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF256720E3AE4B007E49C8 /* AllDogsBreedListDataSource.swift */; };
+		76BF256E20E3B6AE007E49C8 /* SubbreedListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF256A20E3B6AE007E49C8 /* SubbreedListPresenter.swift */; };
+		76BF256F20E3B6AE007E49C8 /* SubbreedListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF256B20E3B6AE007E49C8 /* SubbreedListRouter.swift */; };
+		76BF257020E3B6AE007E49C8 /* SubbreedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF256C20E3B6AE007E49C8 /* SubbreedListVC.swift */; };
+		76BF257120E3B6AE007E49C8 /* SubbreedListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF256D20E3B6AE007E49C8 /* SubbreedListConfigurator.swift */; };
+		76BF257320E3B6C1007E49C8 /* SubbreedListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF257220E3B6C1007E49C8 /* SubbreedListDataSource.swift */; };
+		76BF257620E3B6EB007E49C8 /* SubBreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF257520E3B6EB007E49C8 /* SubBreedCell.swift */; };
+		76BF257820E3B6F4007E49C8 /* SubBreedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BF257720E3B6F4007E49C8 /* SubBreedCell.xib */; };
+		76BF257A20E3BA33007E49C8 /* AllImagesOfBreedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF257920E3BA33007E49C8 /* AllImagesOfBreedList.swift */; };
+		76BF257C20E3BC4C007E49C8 /* AllSubbreedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF257B20E3BC4C007E49C8 /* AllSubbreedList.swift */; };
+		76BF258220E3BFA2007E49C8 /* ImagesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF257E20E3BFA2007E49C8 /* ImagesListPresenter.swift */; };
+		76BF258320E3BFA2007E49C8 /* ImagesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF257F20E3BFA2007E49C8 /* ImagesListRouter.swift */; };
+		76BF258420E3BFA2007E49C8 /* ImagesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF258020E3BFA2007E49C8 /* ImagesListVC.swift */; };
+		76BF258520E3BFA2007E49C8 /* ImagesListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF258120E3BFA2007E49C8 /* ImagesListConfigurator.swift */; };
+		76BF258A20E3BFE4007E49C8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF258920E3BFE4007E49C8 /* ImageCell.swift */; };
+		76BF258C20E3BFF5007E49C8 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BF258B20E3BFF5007E49C8 /* ImageCell.xib */; };
+		76BF258E20E3C142007E49C8 /* ImagesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF258D20E3C142007E49C8 /* ImagesListDataSource.swift */; };
+		83AB42CB05DDB9D3B01AC511 /* Pods_DogViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B53DB7A1EE0C02177767336 /* Pods_DogViewer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B53DB7A1EE0C02177767336 /* Pods_DogViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BF252520E39211007E49C8 /* DogViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BF252820E39211007E49C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76BF252D20E39211007E49C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76BF252F20E39212007E49C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76BF253220E39212007E49C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76BF253420E39212007E49C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BF253B20E39483007E49C8 /* NetworkingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingWorker.swift; sourceTree = "<group>"; };
+		76BF253E20E397B3007E49C8 /* AllBreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBreedsList.swift; sourceTree = "<group>"; };
+		76BF254020E397CD007E49C8 /* DogBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		76BF254520E3AB57007E49C8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		76BF254820E3AB98007E49C8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		76BF254920E3AB98007E49C8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		76BF254E20E3ABC0007E49C8 /* ControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHelper.swift; sourceTree = "<group>"; };
+		76BF255220E3AC3A007E49C8 /* AllDogsBreedListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsBreedListPresenter.swift; sourceTree = "<group>"; };
+		76BF255320E3AC3A007E49C8 /* AllDogsBreedListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsBreedListRouter.swift; sourceTree = "<group>"; };
+		76BF255420E3AC3A007E49C8 /* AllDogsBreedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsBreedListVC.swift; sourceTree = "<group>"; };
+		76BF255520E3AC3A007E49C8 /* AllDogsBreedListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsBreedListConfigurator.swift; sourceTree = "<group>"; };
+		76BF256220E3AD88007E49C8 /* DogBreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedCell.swift; sourceTree = "<group>"; };
+		76BF256420E3AD94007E49C8 /* DogBreedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogBreedCell.xib; sourceTree = "<group>"; };
+		76BF256720E3AE4B007E49C8 /* AllDogsBreedListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDogsBreedListDataSource.swift; sourceTree = "<group>"; };
+		76BF256A20E3B6AE007E49C8 /* SubbreedListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedListPresenter.swift; sourceTree = "<group>"; };
+		76BF256B20E3B6AE007E49C8 /* SubbreedListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedListRouter.swift; sourceTree = "<group>"; };
+		76BF256C20E3B6AE007E49C8 /* SubbreedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedListVC.swift; sourceTree = "<group>"; };
+		76BF256D20E3B6AE007E49C8 /* SubbreedListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedListConfigurator.swift; sourceTree = "<group>"; };
+		76BF257220E3B6C1007E49C8 /* SubbreedListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubbreedListDataSource.swift; sourceTree = "<group>"; };
+		76BF257520E3B6EB007E49C8 /* SubBreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubBreedCell.swift; sourceTree = "<group>"; };
+		76BF257720E3B6F4007E49C8 /* SubBreedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubBreedCell.xib; sourceTree = "<group>"; };
+		76BF257920E3BA33007E49C8 /* AllImagesOfBreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllImagesOfBreedList.swift; sourceTree = "<group>"; };
+		76BF257B20E3BC4C007E49C8 /* AllSubbreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSubbreedList.swift; sourceTree = "<group>"; };
+		76BF257E20E3BFA2007E49C8 /* ImagesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListPresenter.swift; sourceTree = "<group>"; };
+		76BF257F20E3BFA2007E49C8 /* ImagesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListRouter.swift; sourceTree = "<group>"; };
+		76BF258020E3BFA2007E49C8 /* ImagesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListVC.swift; sourceTree = "<group>"; };
+		76BF258120E3BFA2007E49C8 /* ImagesListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListConfigurator.swift; sourceTree = "<group>"; };
+		76BF258920E3BFE4007E49C8 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		76BF258B20E3BFF5007E49C8 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		76BF258D20E3C142007E49C8 /* ImagesListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListDataSource.swift; sourceTree = "<group>"; };
+		B394FA794B5ECF38669E46D1 /* Pods-DogViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogViewer/Pods-DogViewer.release.xcconfig"; sourceTree = "<group>"; };
+		E2B2B74280462F98EF3D90AD /* Pods-DogViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogViewer/Pods-DogViewer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76BF252220E39211007E49C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AB42CB05DDB9D3B01AC511 /* Pods_DogViewer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD9915C1DAAE9361EF20526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B53DB7A1EE0C02177767336 /* Pods_DogViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C93480DBF0A85323C58083 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2B74280462F98EF3D90AD /* Pods-DogViewer.debug.xcconfig */,
+				B394FA794B5ECF38669E46D1 /* Pods-DogViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76BF251C20E39211007E49C8 = {
+			isa = PBXGroup;
+			children = (
+				76BF252720E39211007E49C8 /* DogViewer */,
+				76BF252620E39211007E49C8 /* Products */,
+				42C93480DBF0A85323C58083 /* Pods */,
+				3DD9915C1DAAE9361EF20526 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76BF252620E39211007E49C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76BF252520E39211007E49C8 /* DogViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76BF252720E39211007E49C8 /* DogViewer */ = {
+			isa = PBXGroup;
+			children = (
+				76BF255E20E3AD55007E49C8 /* Views */,
+				76BF255B20E3AC9D007E49C8 /* Resources */,
+				76BF255A20E3AC90007E49C8 /* Storyboards */,
+				76BF255020E3AC08007E49C8 /* Scenes */,
+				76BF254C20E3ABAD007E49C8 /* Helpers */,
+				76BF254220E3AACE007E49C8 /* Extensions */,
+				76BF253D20E39790007E49C8 /* Models */,
+				76BF253A20E3946E007E49C8 /* Networking */,
+			);
+			path = DogViewer;
+			sourceTree = "<group>";
+		};
+		76BF253A20E3946E007E49C8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				76BF253B20E39483007E49C8 /* NetworkingWorker.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		76BF253D20E39790007E49C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76BF253E20E397B3007E49C8 /* AllBreedsList.swift */,
+				76BF257B20E3BC4C007E49C8 /* AllSubbreedList.swift */,
+				76BF254020E397CD007E49C8 /* DogBreed.swift */,
+				76BF257920E3BA33007E49C8 /* AllImagesOfBreedList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76BF254220E3AACE007E49C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76BF254320E3AB33007E49C8 /* UIKit+Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		76BF254320E3AB33007E49C8 /* UIKit+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76BF254720E3AB70007E49C8 /* UITableView+Extensions */,
+				76BF254420E3AB45007E49C8 /* UIViewController+Extensions */,
+			);
+			path = "UIKit+Extensions";
+			sourceTree = "<group>";
+		};
+		76BF254420E3AB45007E49C8 /* UIViewController+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76BF254520E3AB57007E49C8 /* UIViewController+Extension.swift */,
+			);
+			path = "UIViewController+Extensions";
+			sourceTree = "<group>";
+		};
+		76BF254720E3AB70007E49C8 /* UITableView+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76BF254920E3AB98007E49C8 /* UITableView+Extension.swift */,
+				76BF254820E3AB98007E49C8 /* UITableViewCell+Extension.swift */,
+			);
+			path = "UITableView+Extensions";
+			sourceTree = "<group>";
+		};
+		76BF254C20E3ABAD007E49C8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				76BF254D20E3ABB2007E49C8 /* ControllersHelper */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		76BF254D20E3ABB2007E49C8 /* ControllersHelper */ = {
+			isa = PBXGroup;
+			children = (
+				76BF254E20E3ABC0007E49C8 /* ControllerHelper.swift */,
+			);
+			path = ControllersHelper;
+			sourceTree = "<group>";
+		};
+		76BF255020E3AC08007E49C8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				76BF257D20E3BF6B007E49C8 /* ImagesListScene */,
+				76BF256920E3B698007E49C8 /* SubbreedListScene */,
+				76BF255120E3AC1C007E49C8 /* AllDogsBreedListScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		76BF255120E3AC1C007E49C8 /* AllDogsBreedListScene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF255420E3AC3A007E49C8 /* AllDogsBreedListVC.swift */,
+				76BF255220E3AC3A007E49C8 /* AllDogsBreedListPresenter.swift */,
+				76BF256720E3AE4B007E49C8 /* AllDogsBreedListDataSource.swift */,
+				76BF255320E3AC3A007E49C8 /* AllDogsBreedListRouter.swift */,
+				76BF255520E3AC3A007E49C8 /* AllDogsBreedListConfigurator.swift */,
+			);
+			path = AllDogsBreedListScene;
+			sourceTree = "<group>";
+		};
+		76BF255A20E3AC90007E49C8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				76BF252C20E39211007E49C8 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		76BF255B20E3AC9D007E49C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76BF252820E39211007E49C8 /* AppDelegate.swift */,
+				76BF252F20E39212007E49C8 /* Assets.xcassets */,
+				76BF253120E39212007E49C8 /* LaunchScreen.storyboard */,
+				76BF253420E39212007E49C8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76BF255E20E3AD55007E49C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76BF255F20E3AD5C007E49C8 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76BF255F20E3AD5C007E49C8 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				76BF258720E3BFC9007E49C8 /* ImagesListScene */,
+				76BF258620E3BFBA007E49C8 /* SubbreedListScene */,
+				76BF256020E3AD62007E49C8 /* AllDogsBreedListScene */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		76BF256020E3AD62007E49C8 /* AllDogsBreedListScene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF256120E3AD72007E49C8 /* DogBreedCell */,
+			);
+			path = AllDogsBreedListScene;
+			sourceTree = "<group>";
+		};
+		76BF256120E3AD72007E49C8 /* DogBreedCell */ = {
+			isa = PBXGroup;
+			children = (
+				76BF256220E3AD88007E49C8 /* DogBreedCell.swift */,
+				76BF256420E3AD94007E49C8 /* DogBreedCell.xib */,
+			);
+			path = DogBreedCell;
+			sourceTree = "<group>";
+		};
+		76BF256920E3B698007E49C8 /* SubbreedListScene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF256C20E3B6AE007E49C8 /* SubbreedListVC.swift */,
+				76BF256A20E3B6AE007E49C8 /* SubbreedListPresenter.swift */,
+				76BF257220E3B6C1007E49C8 /* SubbreedListDataSource.swift */,
+				76BF256B20E3B6AE007E49C8 /* SubbreedListRouter.swift */,
+				76BF256D20E3B6AE007E49C8 /* SubbreedListConfigurator.swift */,
+			);
+			path = SubbreedListScene;
+			sourceTree = "<group>";
+		};
+		76BF257420E3B6D5007E49C8 /* SubBreedCell */ = {
+			isa = PBXGroup;
+			children = (
+				76BF257520E3B6EB007E49C8 /* SubBreedCell.swift */,
+				76BF257720E3B6F4007E49C8 /* SubBreedCell.xib */,
+			);
+			path = SubBreedCell;
+			sourceTree = "<group>";
+		};
+		76BF257D20E3BF6B007E49C8 /* ImagesListScene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF258020E3BFA2007E49C8 /* ImagesListVC.swift */,
+				76BF257E20E3BFA2007E49C8 /* ImagesListPresenter.swift */,
+				76BF257F20E3BFA2007E49C8 /* ImagesListRouter.swift */,
+				76BF258120E3BFA2007E49C8 /* ImagesListConfigurator.swift */,
+				76BF258D20E3C142007E49C8 /* ImagesListDataSource.swift */,
+			);
+			path = ImagesListScene;
+			sourceTree = "<group>";
+		};
+		76BF258620E3BFBA007E49C8 /* SubbreedListScene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF257420E3B6D5007E49C8 /* SubBreedCell */,
+			);
+			path = SubbreedListScene;
+			sourceTree = "<group>";
+		};
+		76BF258720E3BFC9007E49C8 /* ImagesListScene */ = {
+			isa = PBXGroup;
+			children = (
+				76BF258820E3BFD1007E49C8 /* ImageCell */,
+			);
+			path = ImagesListScene;
+			sourceTree = "<group>";
+		};
+		76BF258820E3BFD1007E49C8 /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				76BF258920E3BFE4007E49C8 /* ImageCell.swift */,
+				76BF258B20E3BFF5007E49C8 /* ImageCell.xib */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76BF252420E39211007E49C8 /* DogViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BF253720E39212007E49C8 /* Build configuration list for PBXNativeTarget "DogViewer" */;
+			buildPhases = (
+				BE5319535A5A03ACFE37A4E5 /* [CP] Check Pods Manifest.lock */,
+				76BF252120E39211007E49C8 /* Sources */,
+				76BF252220E39211007E49C8 /* Frameworks */,
+				76BF252320E39211007E49C8 /* Resources */,
+				F138D458C5BC36A3F560243F /* [CP] Embed Pods Frameworks */,
+				1F616B9064DB38426036FEEC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogViewer;
+			productName = DogViewer;
+			productReference = 76BF252520E39211007E49C8 /* DogViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76BF251D20E39211007E49C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Dmytro Antonchenko";
+				TargetAttributes = {
+					76BF252420E39211007E49C8 = {
+						CreatedOnToolsVersion = 9.3.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 76BF252020E39211007E49C8 /* Build configuration list for PBXProject "DogViewer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76BF251C20E39211007E49C8;
+			productRefGroup = 76BF252620E39211007E49C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76BF252420E39211007E49C8 /* DogViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76BF252320E39211007E49C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BF253320E39212007E49C8 /* LaunchScreen.storyboard in Resources */,
+				76BF256520E3AD94007E49C8 /* DogBreedCell.xib in Resources */,
+				76BF253020E39212007E49C8 /* Assets.xcassets in Resources */,
+				76BF258C20E3BFF5007E49C8 /* ImageCell.xib in Resources */,
+				76BF252E20E39211007E49C8 /* Main.storyboard in Resources */,
+				76BF257820E3B6F4007E49C8 /* SubBreedCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F616B9064DB38426036FEEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogViewer/Pods-DogViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5319535A5A03ACFE37A4E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F138D458C5BC36A3F560243F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DogViewer/Pods-DogViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogViewer/Pods-DogViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76BF252120E39211007E49C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BF256E20E3B6AE007E49C8 /* SubbreedListPresenter.swift in Sources */,
+				76BF255720E3AC3A007E49C8 /* AllDogsBreedListRouter.swift in Sources */,
+				76BF254A20E3AB98007E49C8 /* UITableViewCell+Extension.swift in Sources */,
+				76BF254620E3AB57007E49C8 /* UIViewController+Extension.swift in Sources */,
+				76BF258320E3BFA2007E49C8 /* ImagesListRouter.swift in Sources */,
+				76BF255620E3AC3A007E49C8 /* AllDogsBreedListPresenter.swift in Sources */,
+				76BF253F20E397B3007E49C8 /* AllBreedsList.swift in Sources */,
+				76BF256320E3AD88007E49C8 /* DogBreedCell.swift in Sources */,
+				76BF254F20E3ABC0007E49C8 /* ControllerHelper.swift in Sources */,
+				76BF258220E3BFA2007E49C8 /* ImagesListPresenter.swift in Sources */,
+				76BF257320E3B6C1007E49C8 /* SubbreedListDataSource.swift in Sources */,
+				76BF258A20E3BFE4007E49C8 /* ImageCell.swift in Sources */,
+				76BF257620E3B6EB007E49C8 /* SubBreedCell.swift in Sources */,
+				76BF258520E3BFA2007E49C8 /* ImagesListConfigurator.swift in Sources */,
+				76BF257A20E3BA33007E49C8 /* AllImagesOfBreedList.swift in Sources */,
+				76BF257120E3B6AE007E49C8 /* SubbreedListConfigurator.swift in Sources */,
+				76BF255920E3AC3A007E49C8 /* AllDogsBreedListConfigurator.swift in Sources */,
+				76BF258420E3BFA2007E49C8 /* ImagesListVC.swift in Sources */,
+				76BF256820E3AE4B007E49C8 /* AllDogsBreedListDataSource.swift in Sources */,
+				76BF254120E397CD007E49C8 /* DogBreed.swift in Sources */,
+				76BF257C20E3BC4C007E49C8 /* AllSubbreedList.swift in Sources */,
+				76BF255820E3AC3A007E49C8 /* AllDogsBreedListVC.swift in Sources */,
+				76BF258E20E3C142007E49C8 /* ImagesListDataSource.swift in Sources */,
+				76BF256F20E3B6AE007E49C8 /* SubbreedListRouter.swift in Sources */,
+				76BF253C20E39483007E49C8 /* NetworkingWorker.swift in Sources */,
+				76BF252920E39211007E49C8 /* AppDelegate.swift in Sources */,
+				76BF254B20E3AB98007E49C8 /* UITableView+Extension.swift in Sources */,
+				76BF257020E3B6AE007E49C8 /* SubbreedListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76BF252C20E39211007E49C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BF252D20E39211007E49C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76BF253120E39212007E49C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BF253220E39212007E49C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76BF253520E39212007E49C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76BF253620E39212007E49C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76BF253820E39212007E49C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B2B74280462F98EF3D90AD /* Pods-DogViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DogViewer/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dmytro-Antonchenko.DogViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76BF253920E39212007E49C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B394FA794B5ECF38669E46D1 /* Pods-DogViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DogViewer/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dmytro-Antonchenko.DogViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76BF252020E39211007E49C8 /* Build configuration list for PBXProject "DogViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BF253520E39212007E49C8 /* Debug */,
+				76BF253620E39212007E49C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BF253720E39212007E49C8 /* Build configuration list for PBXNativeTarget "DogViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BF253820E39212007E49C8 /* Debug */,
+				76BF253920E39212007E49C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76BF251D20E39211007E49C8 /* Project object */;
+}

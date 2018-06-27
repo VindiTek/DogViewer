@@ -1,0 +1,6 @@
+framework module Pods_DogViewer {
+  umbrella header "Pods-DogViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
