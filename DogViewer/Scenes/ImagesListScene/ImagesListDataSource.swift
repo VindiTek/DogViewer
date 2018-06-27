@@ -17,7 +17,7 @@ final class ImagesListDataSource: NSObject, UITableViewDataSource {
     }
     
     //MARK: - Closed Properties
-    fileprivate var cellsData: [String] = []
+    private var cellsData: [String] = []
     
     //MARK: - Open
     func updateCellsData(cellsData: [String]) {

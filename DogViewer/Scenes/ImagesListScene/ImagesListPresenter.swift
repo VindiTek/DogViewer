@@ -12,11 +12,11 @@ final class ImagesListPresenter {
     
     //MARK: - Open properties
     let dataSource = ImagesListDataSource()
+    let title: String
     
     //MARK: - Private properties
     private let request: Request
     private let networking = NetworkingWorker.shared
-    let title: String
     
     //MARK: Initializer
     init(request: Request, title: String) {

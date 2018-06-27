@@ -16,7 +16,7 @@ final class AllDogsBreedListDataSource: NSObject, UITableViewDataSource {
     }
     
     //MARK: - Closed Properties
-    fileprivate var cellsData: [DogBreed] = []
+    private var cellsData: [DogBreed] = []
     
     //MARK: - Open
     func updateCellsData(cellsData: [DogBreed]) {
